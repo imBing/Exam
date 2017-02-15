@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+
+target 'FeedbackStar' do
+    pod 'ObjectMapper'
+    pod 'AFNetworking', '~> 3.0'
+    pod 'ReachabilitySwift', '~> 3'
+    pod 'MJRefresh'
+    pod 'Kingfisher', '~> 3.1.0'
+    
+    #   pod 'Alamofire'  9.0+  not use  -> AFNetworking
+end
+
+#debug versions
+# ObjectMapper: 2.0.0
+# Kingfisher: 3.1.0
+# AFNetworking: 3.1.0
+# ReachabilitySwift: 3.0.0
+# MJRefresh: 3.1.12

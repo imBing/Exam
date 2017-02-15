@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  FeedbackStar
+
+  Created by James Xu on 16/9/20.
+  Copyright © 2016年 Daimler. All rights reserved.
+*/
+
+//common titles
+"tabName_home"        =   "Moments"             ;
+"tabName_colleagues"  =   "Colleagues"          ;
+"tabName_message"     =   "Messages"            ;
+"tabName_me"          =   "Me"                  ;
+"tabName_add"         =   "Feedback"            ;
+
+
+
+
+//refresh titles
+"DMLRefreshHeaderIdleText"             =     "Pull down to refresh";
+"DMLRefreshHeaderPullingText"          =     "Release to refresh";
+"DMLRefreshHeaderRefreshingText"       =     "Loading...";
+"DMLRefreshAutoFooterIdleText"         =     "Tap or pull up to load more";
+"DMLRefreshAutoFooterRefreshingText"   =     "Loading...";
+"DMLRefreshAutoFooterNoMoreDataText"   =     "No more data";

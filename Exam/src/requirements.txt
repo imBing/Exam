@@ -1,0 +1,9 @@
+Flask
+psycopg2
+sqlalchemy
+sqlalchemy-migrate
+Flask-Mail
+flasgger
+uwsgi
+bcrypt
+requests

@@ -1,0 +1,14 @@
+Create a user
+---
+tags:
+  - user
+parameter:
+  - name: json
+    in: body
+    required: true
+    type: string
+responses:
+  201:
+    description: Create user successfully.
+  422:
+    description: Email already used.

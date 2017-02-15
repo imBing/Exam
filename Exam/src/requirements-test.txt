@@ -1,0 +1,5 @@
+coverage
+Pylint
+nose
+ddt
+psycopg2

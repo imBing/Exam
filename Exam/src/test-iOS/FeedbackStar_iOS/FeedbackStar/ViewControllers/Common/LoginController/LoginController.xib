@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModule="FeedbackStar" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="iQN-rG-SUk" id="Q0m-KX-sLv"/>
+                <outlet property="nextButton" destination="2EV-YT-IKB" id="Qdj-F5-2ab"/>
+                <outlet property="passwordView" destination="vgC-01-iB9" id="lJo-5J-gNk"/>
+                <outlet property="pwdTextField" destination="ER7-Rt-s3r" id="UMh-Kp-ylm"/>
+                <outlet property="seePwdBtn" destination="ZlZ-5T-9Wt" id="j8A-XK-gol"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-01-iB9" userLabel="passwordView">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ER7-Rt-s3r" userLabel="pwdTextField">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="A32-N9-dTb"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="password_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-fm-EsI">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="BAA-d1-kzo"/>
+                                <constraint firstAttribute="width" constant="20" id="p0u-aC-Ghp"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlZ-5T-9Wt" userLabel="seePwdBtn">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="8GH-CA-Lh8"/>
+                                <constraint firstAttribute="height" constant="12" id="t8M-t5-oaZ"/>
+                            </constraints>
+                            <connections>
+                                <action selector="seePwdBtnClick" destination="-1" eventType="touchUpInside" id="IBr-QF-kX9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5lv-CV-dIL"/>
+                        <constraint firstItem="ER7-Rt-s3r" firstAttribute="leading" secondItem="gb9-fm-EsI" secondAttribute="trailing" constant="13" id="9M4-pI-P3x"/>
+                        <constraint firstAttribute="trailing" secondItem="ZlZ-5T-9Wt" secondAttribute="trailing" constant="25" id="NEu-rD-ODb"/>
+                        <constraint firstItem="ER7-Rt-s3r" firstAttribute="top" secondItem="vgC-01-iB9" secondAttribute="top" constant="15" id="NNs-bE-opk"/>
+                        <constraint firstItem="ZlZ-5T-9Wt" firstAttribute="top" secondItem="vgC-01-iB9" secondAttribute="top" constant="20" id="gsE-hl-wbj"/>
+                        <constraint firstItem="gb9-fm-EsI" firstAttribute="leading" secondItem="vgC-01-iB9" secondAttribute="leading" constant="16" id="hvM-95-eSR"/>
+                        <constraint firstItem="ZlZ-5T-9Wt" firstAttribute="leading" secondItem="ER7-Rt-s3r" secondAttribute="trailing" constant="21" id="n5C-TJ-3rR"/>
+                        <constraint firstItem="gb9-fm-EsI" firstAttribute="top" secondItem="vgC-01-iB9" secondAttribute="top" constant="15" id="ryK-Xk-AhP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-YT-IKB" userLabel="nextButton">
+                    <color key="backgroundColor" red="0.19215686274509802" green="0.73333333333333328" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="HMM-7t-Z9G"/>
+                    </constraints>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.97254901960784312" green="0.98431372549019602" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextButtonClick" destination="-1" eventType="touchUpInside" id="zkK-Uk-5z5"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-rG-SUk">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="oHN-SM-kP3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iQN-rG-SUk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="91" id="44j-t3-4wF"/>
+                <constraint firstItem="vgC-01-iB9" firstAttribute="top" secondItem="iQN-rG-SUk" secondAttribute="bottom" constant="25" id="C6U-9N-ukt"/>
+                <constraint firstAttribute="trailing" secondItem="2EV-YT-IKB" secondAttribute="trailing" constant="16" id="CBp-sq-avq"/>
+                <constraint firstItem="iQN-rG-SUk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="JI3-Ir-xbZ"/>
+                <constraint firstAttribute="trailing" secondItem="iQN-rG-SUk" secondAttribute="trailing" constant="16" id="N5M-Hu-QMO"/>
+                <constraint firstItem="2EV-YT-IKB" firstAttribute="top" secondItem="vgC-01-iB9" secondAttribute="bottom" constant="61" id="Ss7-F5-vaF"/>
+                <constraint firstItem="vgC-01-iB9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="crp-MW-Axq"/>
+                <constraint firstItem="2EV-YT-IKB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="oUa-D6-woF"/>
+                <constraint firstAttribute="trailing" secondItem="vgC-01-iB9" secondAttribute="trailing" id="sh5-Cp-RAa"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="355.5" y="-186.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="password_icon" width="17" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  FeedbackStar
+
+  Created by James Xu on 16/9/20.
+  Copyright © 2016年 Daimler. All rights reserved.
+*/
+
+//common titles
+"exampleTitle"        =    "页面加载" ;
+"tabName_home"        =    "首页"      ;
+"tabName_colleagues"  =    "搜索"      ;
+"tabName_message"     =    "事件"      ;
+"tabName_me"          =    "我的"      ;
+
+
+
+
+//refresh titles
+"DMLRefreshHeaderIdleText"             =     "下拉可以刷新";
+"DMLRefreshHeaderPullingText"          =     "松开立即刷新";
+"DMLRefreshHeaderRefreshingText"       =     "正在刷新数据中...";
+"DMLRefreshAutoFooterIdleText"         =     "点击或上拉加载更多";
+"DMLRefreshAutoFooterRefreshingText"   =     "正在加载更多的数据...";
+"DMLRefreshAutoFooterNoMoreDataText"   =     "无更多数据";
